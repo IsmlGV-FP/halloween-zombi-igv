@@ -1,0 +1,7 @@
+{
+  "name": "halloween-zombi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
