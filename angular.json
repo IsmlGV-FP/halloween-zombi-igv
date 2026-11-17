@@ -104,19 +104,41 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html",
-              "e2e/**/*.ts",
-              "playwright.config.ts"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html", "e2e/**/*.ts", "playwright.config.ts"]
+          }
+        }
+      }
+    },
+    "halloween-ui": {
+      "projectType": "library",
+      "root": "projects/halloween-ui",
+      "sourceRoot": "projects/halloween-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/halloween-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/halloween-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/halloween-ui/tsconfig.spec.json"
           }
         }
       }
     }
   },
   "cli": {
-    "schematicCollections": ["@ionic/angular-toolkit"]
+    "schematicCollections": ["@ionic/angular-toolkit"],
+    "analytics": "f698353a-3c27-49c2-af85-53ba65cffab5"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

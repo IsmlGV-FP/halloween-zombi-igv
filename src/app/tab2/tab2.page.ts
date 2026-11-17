@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
+// Importante: importar los componentes desde @ionic/angular/standalone
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular';
 
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import { MonsterCardComponent } from 'halloween-ui';
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent],
+  standalone: true, // <-- Recomendado indicar standalone: true
+  imports: [
+    IonHeader, 
+    IonToolbar, 
+    IonTitle, 
+    IonContent, 
+    MonsterCardComponent // Tu tarjeta de la librería
+  ]
 })
 export class Tab2Page {
   constructor() {}

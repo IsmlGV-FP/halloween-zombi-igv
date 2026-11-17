@@ -1,0 +1,65 @@
+:host {
+  display: block;
+  margin: 16px auto;
+  max-width: 380px; /* Evita que la tarjeta sea excesivamente ancha en pantallas grandes */
+}
+
+.card {
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid #569035; /* Borde verde acorde a tu ion-tab-button */
+  border-radius: 16px;
+  background: #222a1f; /* Fondo oscuro con matiz verde para integrar con #171717 */
+  box-shadow: 0 4px 16px rgba(124, 205, 77, 0.2); /* Sombra verde neón estilo Halloween */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el ratón o interactuar */
+.card:hover {
+  box-shadow: 0 6px 20px rgba(106, 230, 75, 0.35);
+}
+
+.card__foto {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: scale-down;
+  padding: 10px;
+  border-bottom: 2px solid #34442a;
+}
+
+.card__cuerpo {
+  padding: 16px;
+  text-align: center; /* Alineado con el text-align de tu ion-content */
+}
+
+.card__nombre {
+  margin: 8px 0 6px;
+  color: #7ccd4d; /* Verde claro destacado (mismo que el texto de tu ion-toolbar) */
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card__frase {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #34442a; /* Fondo verde oscuro del toolbar */
+  color: #6ae64b; /* Texto verde neón (mismo que ion-tab-button seleccionado) */
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid #569035;
+}
+
+.card__texto {
+  margin: 0;
+  color: #d4d4d4; /* Gris claro de alta legibilidad sobre fondo oscuro */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

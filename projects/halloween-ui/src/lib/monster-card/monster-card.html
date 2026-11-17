@@ -1,0 +1,10 @@
+<article class="card">
+    @if (fotoPrincipal) {
+        <img class="card__foto" [src]="fotoPrincipal"/>
+    }
+    <div class="card__cuerpo">
+        <span class="card__nombre">{{ nombre }}</span>
+        <h2 class="card__frase">{{ frasePresentacion }}</h2>
+        <p class="card__texto">{{ texto }}</p>
+    </div>
+</article>
