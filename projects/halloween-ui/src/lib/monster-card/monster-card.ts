@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './monster-card.css',
   standalone: true,
   template: `
-    <div style="border: 2px solid purple; padding: 10px;">
+    <div style= padding: 10px;">
       <h2>{{ nombre }}</h2>
       <p>{{ frasePresentacion }}</p>
       <p>{{ texto }}</p>

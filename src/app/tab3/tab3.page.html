@@ -1,9 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>El rincón del terror. </ion-title>
+    <ion-title>El Rincón del Terror</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
+  <h1>Escenarios y Avistamientos</h1>
 
+  <lib-monster-card
+    [nombre]="'Cementerio Abandonado'"
+    [frasePresentacion]="'Lugar de Origen'"
+    [texto]="'Zona de la ciudad de donde emergen los caminantes durante las noches de luna llena.'"
+    [fotoPrincipal]="'assets/graveyard.jpg'">
+  </lib-monster-card>
+
+  <lib-monster-card
+    [nombre]="'La Incursión Nocturna'"
+    [frasePresentacion]="'Avistamiento Reciente'"
+    [texto]="'Fotografía captada por una cámara de cuerpo durante el último ataque en el laboratorio.'"
+    [fotoPrincipal]="'assets/lab.jpg'">
+  </lib-monster-card>
 </ion-content>

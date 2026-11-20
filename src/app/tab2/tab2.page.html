@@ -1,9 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Secretos y leyendas. </ion-title>
+    <ion-title>Secretos y Leyendas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
- 
+<ion-content class="ion-padding" [fullscreen]="true">
+   <h1>Leyenda del zombi</h1>
+
+  <lib-monster-card
+    [nombre]="'La Leyenda del Zombi Ancestral'"
+    [frasePresentacion]="'Origen y Mito Vudú'"
+    [texto]="'Cuenta la antigua leyenda que los primeros zombis no nacieron de virus, sino de oscuros ritos en el Caribe, donde los muertos eran despertados de sus tumbas sin alma ni voluntad.'"
+    [fotoPrincipal]="'assets/ritual.jpg'">
+  </lib-monster-card>
+
+  <h1>Secretos del Zombi</h1>
+
+  <lib-monster-card
+    [nombre]="'Poder: Infección Viral'"
+    [frasePresentacion]="'Habilidad Principal'"
+    [texto]="'Cualquier mordedura o rasguño propaga la infección zombi de forma instantánea entre sus víctimas.'"
+    [fotoPrincipal]="'assets/bite.webp'">
+  </lib-monster-card>
+
+  <lib-monster-card
+    [nombre]="'Debilidad: Fuego y Cabeza'"
+    [frasePresentacion]="'Punto Débil'"
+    [texto]="'El fuego consume sus tejidos y la destrucción directa del cerebro destruye por completo su impulso vital.'"
+    [fotoPrincipal]="'assets/burn.png'">
+  </lib-monster-card>
 </ion-content>

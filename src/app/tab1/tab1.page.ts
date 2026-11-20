@@ -8,14 +8,8 @@ import { MonsterCardComponent } from 'halloween-ui';
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss'],
-  standalone: true, // <-- Recomendado indicar standalone: true
-  imports: [
-    IonHeader, 
-    IonToolbar, 
-    IonTitle, 
-    IonContent, 
-    MonsterCardComponent // Tu tarjeta de la librería
-  ]
+  standalone: true,
+  imports: [ IonHeader, IonToolbar, IonTitle, IonContent, MonsterCardComponent ]
 })
 export class Tab1Page {
   constructor() {}
