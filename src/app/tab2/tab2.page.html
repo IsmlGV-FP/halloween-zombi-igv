@@ -11,7 +11,8 @@
     [nombre]="'La Leyenda del Zombi Ancestral'"
     [frasePresentacion]="'Origen y Mito Vudú'"
     [texto]="'Cuenta la antigua leyenda que los primeros zombis no nacieron de virus, sino de oscuros ritos en el Caribe, donde los muertos eran despertados de sus tumbas sin alma ni voluntad.'"
-    [fotoPrincipal]="'assets/ritual.jpg'">
+    [fotoPrincipal]="'assets/ritual.jpg'"
+    (seleccionar)="onMonstruoSeleccionado($event)">
   </lib-monster-card>
 
   <h1>Secretos del Zombi</h1>

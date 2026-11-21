@@ -1,10 +1,14 @@
-<article class="card">
-    @if (fotoPrincipal) {
-        <img class="card__foto" [src]="fotoPrincipal"/>
-    }
-    <div class="card__cuerpo">
-        <span class="card__nombre">{{ nombre }}</span>
-        <h2 class="card__frase">{{ frasePresentacion }}</h2>
-        <p class="card__texto">{{ texto }}</p>
-    </div>
-</article>
+<div class="card">
+  @if (fotoPrincipal) {
+    <img [src]="fotoPrincipal" [alt]="nombre" class="card__foto" />
+  }
+  <div class="card__cuerpo">
+    <h2 class="card__nombre">{{ nombre }}</h2>
+    <span class="card__frase">{{ frasePresentacion }}</span>
+    <p class="card__texto">{{ texto }}</p>
+
+    <button type="button" class="card__boton" (click)="onBotonClick()">
+      Ver detalles 
+    </button>
+  </div>
+</div>

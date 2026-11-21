@@ -56,10 +56,33 @@
   letter-spacing: 0.5px;
   border: 1px solid #569035;
 }
+.card__boton {
+  margin-top: 14px;
+  padding: 8px 16px;
+  border: 1px solid #569035;
+  border-radius: 8px;
+  background: #5eca56;
+  color: #171717;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
 
 .card__texto {
   margin: 0;
   color: #d4d4d4; /* Gris claro de alta legibilidad sobre fondo oscuro */
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.card__boton:hover {
+  background: #6ae64b;
+  transform: scale(1.03);
+}
+
+.card__boton:active {
+  transform: scale(0.98);
 }
